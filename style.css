@@ -1,0 +1,43 @@
+body {
+    font-family: "Microsoft YaHei", "Heiti SC", sans-serif;
+    background-color: #f8fafc;
+}
+/* 针对 SVG 内的文本，使用更专业的数学字体 */
+.svg-symbol {
+    font-family: 'KaTeX_Math', 'Times New Roman', serif;
+}
+.slider-thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3b82f6;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+.slider-thumb::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3b82f6;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+.canvas-grid line {
+    stroke: #e2e8f0;
+    stroke-width: 1;
+}
+.axis-text {
+    font-size: 12px;
+    fill: #64748b;
+}
+.disabled-input {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.disabled-input input[type="range"] {
+    pointer-events: none;
+}
